@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>ShopEasy</h1>
+  </header>
+
+  <main class="product-page">
+    <section class="product">
+      <div class="product-image">
+        
+      </div>
+      <div class="product-details">
+        <h2 class="product-title">Stylish T-Shirt</h2>
+        <p class="product-description">
+          A high-quality, stylish T-shirt that offers comfort and durability. Perfect for any casual occasion.
+        </p>
+        <p class="product-price" id="price">$20.00</p>
+        
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" min="1" value="1">
+        
+        <button class="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+      </div>
+    </section>
+
+    <section class="cart" id="cart">
+      <h2>Your Cart</h2>
+      <div id="cart-items">
+        <p>Your cart is empty.</p>
+      </div>
+      <p id="total-price"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 ShopEasy. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
